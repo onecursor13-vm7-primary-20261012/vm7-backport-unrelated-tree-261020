@@ -1,0 +1,9 @@
+pull_request_rules:
+  - name: VM7 exact reviewed backport 261020
+    conditions:
+      - merged
+      - title = VM7_BACKPORT_REVIEWED_S_ONLY_261020
+    actions:
+      backport:
+        branches:
+          - release
